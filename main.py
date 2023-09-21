@@ -79,13 +79,13 @@ def create_conf_file(server_name):
 
 def create_html(server_name):
     # Creating an html page
-    html_file = """
+    html_file = f"""
 	<html>
   		<body>
      	   		Hello, {server_name}
     		</body>
 	</html>
-     """.format(server_name)
+     """
 
     with open(f'/var/www/{server_name}/html/index.html', 'w') as index_file:
         index_file.write(html_file)
