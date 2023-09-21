@@ -42,9 +42,9 @@ def main():
 
 def is_nginx():
     try:
-	    subprocess.run(['nginx', '-v'])
+        subprocess.run(['nginx', '-v'])
     except FileNotFoundError:
-	    print("\nInstalling Nginx...\n")
+        print("\nInstalling Nginx...\n")
         install_nginx()
 
 
